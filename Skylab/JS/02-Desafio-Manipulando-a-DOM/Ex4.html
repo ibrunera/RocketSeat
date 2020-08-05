@@ -1,0 +1,31 @@
+<html>
+<head>
+    <title>Exercicio 4</title>
+</head>
+<body>
+    <div>
+        <input type="text" name="nome">
+        <button onClick="adicionar()">Adicionar</button>
+        <ul></ul>
+    </div>
+
+    <script>
+        var lista = document.querySelector('ul')
+
+
+        function adicionar() {
+            var li = document.createElement('li')
+            var inputElement = document.querySelector('input[name=nome]')  
+            var nome = document.createTextNode(inputElement.value)
+            
+            inputElement.value =''
+            
+            li.appendChild(nome)
+            
+            lista.appendChild(li)
+        }
+
+        
+    </script>
+</body>
+</html>

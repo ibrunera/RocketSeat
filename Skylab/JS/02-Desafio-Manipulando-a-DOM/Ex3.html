@@ -1,0 +1,30 @@
+<html>
+<head>
+    <title>Exercicio 3</title>
+</head>
+<body>
+    <div>
+        <ul></ul>
+    </div>
+
+    <script>
+        var lista = document.querySelector('ul')
+        var nomes = ["Diego", "Gabriel", "Lucas"]
+        
+        for (let i = 0; i < nomes.length; i++) {
+            var li = document.createElement('li')
+            var nome = document.createTextNode(nomes[i])
+            li.appendChild(nome)
+            lista.appendChild(li)           
+        }
+
+        var n0mes = ["Dengoso", "Dunga", "Zangado"]
+        for(nom3 of n0mes){
+            var li = document.createElement('li')
+            var x = document.createTextNode(nom3)
+            li.appendChild(x)
+            lista.appendChild(li) 
+        }
+    </script>
+</body>
+</html>

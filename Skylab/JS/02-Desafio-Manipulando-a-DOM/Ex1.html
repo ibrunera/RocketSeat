@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Exercicio 1</title>
+    </head>
+    <body>
+        <div id="app">
+            <button class="botao">Press</button>
+        </div>
+
+        <script>
+            var btn = document.querySelector('.botao')
+
+            var container = document.querySelector('#app')
+            
+            btn.onclick = function(){
+                //criando a div
+                var box = document.createElement('div')
+                //estilizando
+                box.style.width = 100
+                box.style.height = 100
+                box.style.backgroundColor = '#f00'
+                box.style.margin = 1
+                
+                //inserindo no hmtl
+                container.appendChild(box)
+            }
+            /**
+            *por algum motivo, o css só funcionou depois q eu inseri o style manualmente na div.
+            *style="width: 100px; height: 100px;background-color: #f00;"
+            *antes disso nao adiantava editar o style q n alterava no navegador.
+            */
+        </script>
+    </body>
+</html>
